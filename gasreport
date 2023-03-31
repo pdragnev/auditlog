@@ -1,0 +1,18 @@
+Running 2 tests for test/AuditLog.t.sol:AuditLogTest
+[PASS] testAuditLog() (gas: 2664994573)
+[PASS] testAuditLogEvents() (gas: 602894575)
+Test result: ok. 2 passed; 0 failed; finished in 1.58s
+| src/AuditLog.sol:AuditLog contract |                 |       |        |       |         |
+|------------------------------------|-----------------|-------|--------|-------|---------|
+| Deployment Cost                    | Deployment Size |       |        |       |         |
+| 176137                             | 887             |       |        |       |         |
+| Function Name                      | min             | avg   | median | max   | # calls |
+| log                                | 22694           | 22694 | 22694  | 24694 | 100000  |
+
+
+| src/AuditLogEvents.sol:AuditLogEvents contract |                 |      |        |      |         |
+|------------------------------------------------|-----------------|------|--------|------|---------|
+| Deployment Cost                                | Deployment Size |      |        |      |         |
+| 163724                                         | 825             |      |        |      |         |
+| Function Name                                  | min             | avg  | median | max  | # calls |
+| log                                            | 2073            | 2073 | 2073   | 4073 | 100000  |
