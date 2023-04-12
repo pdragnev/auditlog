@@ -4,13 +4,13 @@ pragma solidity 0.8.16;
 import "openzeppelin-contracts/contracts/access/Ownable.sol";
 
 contract AuditLog is Ownable {
-    mapping(uint256 => mapping(uint256 => uint256)) logs;
+    mapping(string => mapping(string => string)) logs;
 
-    function log(uint256 _dealID, uint256 _fileID, uint256 _filehash) public onlyOwner {
+    function log(string memory _dealID, string memory _fileID, string memory _filehash) public onlyOwner {
         logs[_dealID][_fileID] = _filehash;
     }
 
-    function getLog(uint256 _dealID, uint256 _fileID) public view returns (uint256) {
+    function getLog(string memory _dealID, string memory _fileID) public view returns (string memory) {
         return logs[_dealID][_fileID];
     }
 }
